@@ -3,6 +3,7 @@ import {BrowserRouter as Router,
     Switch, Route}            from 'react-router-dom';
 import Navbar                 from '../../component/Navbar/Navbar';
 import config                 from 'react-global-configuration';
+import NotFound               from '../NotFound/NotFound';
 import './App.compact.css'
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
                                     component={route.component}
                                 />
                             ))}
+                            <Route path="*" component={NotFound} />
                         </Switch>
                     </div>
                 </div>
