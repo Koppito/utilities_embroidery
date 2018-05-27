@@ -1,0 +1,19 @@
+{
+  "name": "utilities-embroidery",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "eslint-plugin-react": "^7.8.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-global-configuration": "^1.2.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,13 @@
+.navbar { background-color: #34495e; height: 100vh; }
+
+.navbar-button { background: #2c3e50; border: 0; height: 50px; width: 100%; font-weight: bold; color: #ecf0f1; cursor: pointer; transition: 0.15s; z-index: 99; position: relative; }
+
+.navbar-button::before { content: ''; display: block; height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: 0; z-index: -99; transition: 0.25s; background: linear-gradient(to right, #0165b0, #1B9CFC); }
+
+.navbar-button:hover { filter: brightness(0.9); }
+
+.navbar-button:active { filter: brightness(0.8); }
+
+.navbar-button:focus { outline: 0; }
+
+.navbar-button[data-selected=true]::before { opacity: 1; }

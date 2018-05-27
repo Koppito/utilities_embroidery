@@ -1,0 +1,11 @@
+$navbar-width: 15%
+
+.navbar-container
+    width: $navbar-width
+    display: block
+    position: absolute
+
+.page-container
+    max-width: calc(100% - #{$navbar-width})
+    padding-left: calc(20px + #{$navbar-width})
+    display: inline-block

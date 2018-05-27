@@ -1,0 +1,43 @@
+$navbar-color-primary: #34495e
+$navbar-color-secondary: #ff7f50
+$navbar-selected-primary: #0165b0
+$navbar-selected-secondary: #1B9CFC
+$navbar-button-default: #2c3e50
+$navbar-button-font: #ecf0f1
+
+.navbar
+    background-color: $navbar-color-primary
+    height: 100vh
+
+.navbar-button
+    background: $navbar-button-default
+    border: 0
+    height: 50px
+    width: 100%
+    font-weight: bold
+    color: $navbar-button-font
+    cursor: pointer
+    transition: 0.15s
+    z-index: 99
+    position: relative
+    &::before
+        content: ''
+        display: block
+        height: 100%
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        z-index: -99
+        transition: 0.25s
+        background: linear-gradient(to right, $navbar-selected-primary, $navbar-selected-secondary)
+    &:hover
+        filter: brightness(0.9)
+    &:active
+        filter: brightness(0.8)
+    &:focus
+        outline: 0
+    &[data-selected=true]
+        &::before
+            opacity: 1
